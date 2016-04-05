@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js fun times</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			html, body {
+  			height: 100%;
+  			margin: 0;
+  			padding: 0;
+  			background: #f0f0f0;
+  			color: #eeeeee;
+  			font-family: monospace;
+  			font-weight: 200;
+  			font-size: 16px;
+			}
+
+			html body {
+			  overflow-x: hidden;
+			}
+
+			html #fixed-frame {
+			  overflow: hidden;
+				z-index: 2;
+				position: fixed;
+			}
+
+			html #fixed-frame > #camera-frame > * {
+			  margin: 0;
+			  padding: 0;
+			}
+
+			html #native-frame {
+			  position: absolute;
+			  left: 0;
+			  right: 0;
+			  top: 100px;
+			  z-index: 3;
+			}
+
+			html #native-frame > div {
+				z-index: 3;
+
+			  transform: translateZ(0px);
+			  -webkit-transform: translateZ(0px);
+			}
+
+			html body > canvas.frame {
+			  z-index: 1;
+			}
+
+			h1 {
+				margin-top: 70vh;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<script src="js/three.min.js"></script>
+		<!-- // <script src="js/OrbitControls.js"></script> -->
+
+  <div id="fixed-frame" class="frame">
+    <div id="camera-frame">
+    </div>
+  </div>
+
+  <div id="native-frame">
+  	<div style="padding: 0 20%;">
+    <!-- Begin Content -->
+           <h1>Lorem ipsum dolor sit</h1>
+        <h2>Amet consectetur adipiscing elit</h2>
+        
+        <p>Vivamus eu dolor sit amet eros eleifend auctor vitae ac magna.</p>
+
+        <p>Nullam blandit sed urna id mollis. Praesent rhoncus neque ut viverra hendrerit. Integer vel interdum nisl. Donec porta, velit ac laoreet pulvinar, nibh lectus sodales mauris, at rutrum augue mauris eget nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+
+        <p>Integer imperdiet mollis nulla. Nulla facilisis, est non varius dapibus, lectus erat congue justo, ac aliquam ligula lectus eu mi. Integer ac ultricies nulla. Ut luctus, lectus sed interdum condimentum, tellus neque iaculis tortor, non aliquam justo risus sed dui. Nam eget odio diam. Suspendisse urna erat, accumsan in cursus non, pretium a neque. Integer non aliquam erat, sit amet facilisis dui.</p>
+
+        <p>In hac habitasse platea dictumst. Suspendisse tempor orci leo, ac varius elit tempus id. Vestibulum tincidunt faucibus lorem vitae ullamcorper. Maecenas eu velit ante.</p>
+
+        <p>Nunc vulputate aliquam enim, eu suscipit purus pellentesque eu. Quisque sit amet varius nulla. </p>
+
+        <p>Maecenas dapibus at lectus id convallis. Nullam dapibus ligula et nulla malesuada, facilisis tincidunt erat feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p>Etiam non dui nisi. Suspendisse ornare orci quam, sed faucibus quam dapibus ac. Nam vel sapien id lorem tempus molestie eget quis sapien. Aenean malesuada dignissim laoreet. Sed eu condimentum ipsum. Cras nec luctus ipsum. Sed facilisis augue ac dui interdum pellentesque. </p>
+
+        <p>Cras at sem id tortor consequat viverra. Praesent cursus blandit felis, a condimentum nulla tincidunt quis. Donec rhoncus ac justo ac condimentum.</p>
+
+        <p>Quisque quis metus sed lacus laoreet pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eu risus mi. Proin sem enim, rutrum ac lacus eget, consectetur ultricies orci. Duis nec velit non dolor sollicitudin consectetur sed a ante. Quisque eget mollis augue.</p>
+
+        <p>Integer non aliquam erat, sit amet facilisis dui.</p>
+
+        <p>In hac habitasse platea dictumst. Suspendisse tempor orci leo, ac varius elit tempus id. Vestibulum tincidunt faucibus lorem vitae ullamcorper. Maecenas eu velit ante. Suspendisse potenti. Praesent a mi sit amet ante blandit elementum. In mattis ligula non nisi varius suscipit.</p>
+
+        <p>Mauris tincidunt, est a egestas adipiscing, ipsum diam fermentum tellus, eu mollis diam sapien vitae nunc. Quisque rhoncus urna in leo fermentum, non varius libero hendrerit. Maecenas sit amet ultrices eros, nec egestas orci. Etiam aliquam libero sit amet tortor aliquam sodales. Duis in consequat elit.</p>
+
+        <p>Nunc vulputate aliquam enim, eu suscipit purus pellentesque eu. Quisque sit amet varius nulla. Maecenas dapibus at lectus id convallis. Nullam dapibus ligula et nulla malesuada, facilisis tincidunt erat feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+        <p>Nulla viverra lectus eget dui accumsan, id eleifend augue scelerisque. </p>
+
+        <p>Morbi et interdum lacus. Cras vel lobortis neque. </p>
+
+        <p>Sed malesuada venenatis sapien, vel pharetra justo lacinia at. Vestibulum nec consequat purus, nec faucibus massa. Nullam ac suscipit metus. Vestibulum viverra nunc id sollicitudin congue.</p>
+
+        <p>Etiam non dui nisi. Suspendisse ornare orci quam, sed faucibus quam dapibus ac. Nam vel sapien id lorem tempus molestie eget quis sapien. Aenean malesuada dignissim laoreet. Sed eu condimentum ipsum. Cras nec luctus ipsum. Sed facilisis augue ac dui interdum pellentesque. Cras at sem id tortor consequat viverra. Praesent cursus blandit felis, a condimentum nulla tincidunt quis. Donec rhoncus ac justo ac condimentum.</p>
+    </div>
+    <!-- End Content -->
+
+  </div>
+
+
+<script>
+			var scroll = 0;
+			var scrollDiff = 0;
+			var prevScrollTop = 0;
+
+			var create = function( klass, args ) {
+				var F = function( klass, args ) {
+				    return klass.apply( this, args );
+				};
+				F.prototype = klass.prototype;
+				return new F( klass, args );
+			};
+
+			// polyhedron
+			var polyhedron = {
+				type: 'IcosahedronGeometry',
+				args: [10,1]
+			};
+
+			// start scene
+			init();
+			animate();
+
+			// ----
+			function init() {
+				container = document.getElementById('camera-frame');
+				
+				camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
+				camera.position.z = 500;
+
+				scene = new THREE.Scene();
+
+				// add stuff
+
+				if ( window.group !== undefined ) {
+					scene.remove( group );
+				}
+
+				geometry = create( THREE[polyhedron.type], polyhedron.args );
+				geometry.computeBoundingSphere();
+
+				var scaleFactor = 160 / geometry.boundingSphere.radius;
+				geometry.scale( scaleFactor, scaleFactor, scaleFactor );
+
+				var originalGeometry = geometry.clone();
+
+				group = new THREE.Group();
+				scene.add( group );
+
+				var mesh = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( { color: 0xfefefe, wireframe: true, opacity: 0.5 } ) );
+				group.add( mesh );
+
+				// renderer
+
+				renderer = new THREE.WebGLRenderer({antialias: true});
+				renderer.setClearColor( 0xe1e1e1 ); //e1e1e1
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				// controls
+				// controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+			function animate() {
+				requestAnimationFrame( animate );
+				render();
+			}
+			function render() {
+				group.rotation.x = 0.002*scroll;
+				// add drift
+				group.rotation.y += 0.001;
+				group.rotation.z += 0.0001;
+				// group.rotation.x += 0.02*scrollDiff;
+				// group.rotation.y += 0.002*scrollDiff;
+				renderer.render( scene, camera );
+			}
+
+			// SCROLL STUFF
+			// ------------
+
+			// window.addEventListener('scroll', this.onScroll.bind(this));
+			window.addEventListener('scroll', function(e){
+				// scrollDiff = e.target.scrollingElement.scrollTop - prevScrollTop;
+				// prevScrollTop = e.target.scrollingElement.scrollTop;
+				scroll = e.target.scrollingElement.scrollTop;
+
+			});
+    		
+
+
+		</script>
+
+  </body>
+</html>
